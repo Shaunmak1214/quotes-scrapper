@@ -1,4 +1,4 @@
-# space-quotes-scrapper
+# Space Quotes Scrapper
 Simple API for getting random (space-related) quotes using web scrapping techniques
 
 Randomize Quotes:
