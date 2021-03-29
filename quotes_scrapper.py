@@ -8,8 +8,9 @@ def spacequotes():
     quotes = soup.find_all('a', {'title' : 'view quote'})
 
     for idx, item in enumerate(quotes):
-        itemsByNum = item.text
-        quotesArr.append(itemsByNum)
+        if item.text != "\n\n":
+            itemsByNum = item.text
+            quotesArr.append(itemsByNum)
 
     return quotesArr
 
@@ -20,12 +21,13 @@ def spacequotes1():
     quotes = soup.find_all('p', class_ = "quotation")
 
     for idx, item in enumerate(quotes):
-        itemsByNum = item.text
-        quotesArr.append(itemsByNum)
+        if item.text != "\n\n":
+            itemsByNum = item.text
+            quotesArr.append(itemsByNum)
 
     return quotesArr
 
 
-""" response = spacequotes1();
-print (response) """
+response = spacequotes1();
+print (response)
 
