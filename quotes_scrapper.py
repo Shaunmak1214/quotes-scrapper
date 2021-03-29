@@ -28,6 +28,6 @@ def spacequotes1():
     return quotesArr
 
 
-response = spacequotes1();
-print (response)
+""" response = spacequotes1();
+print (response) """
 
