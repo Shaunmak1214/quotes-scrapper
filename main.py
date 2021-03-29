@@ -1,13 +1,13 @@
 from flask import Flask
 from flask_restful import Api, Resource
-from quotes_scrapper import spacequotes
+from quotes_scrapper import spacequotes, spacequotes1
 
 app = Flask(__name__)
 api = Api(app)
 
 class HelloWorld(Resource):
     def get(self):
-        quotes = spacequotes()
+        quotes = spacequotes1()
         return {"data" : quotes}
 
 api.add_resource(HelloWorld, "/helloworld")
